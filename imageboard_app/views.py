@@ -9,10 +9,6 @@ class IndexView(ListView):
     model = Post
     template_name = 'imageboard_app/index.html'
 
-class ImageboardView(ListView):
-    model = Post
-    template_name = 'imageboard_app/imageboard_home.html'
-
 class PostView(DetailView):
     model = Post
     template_name = 'imageboard_app/post.html'
@@ -24,7 +20,7 @@ def new_thread(request):
         form = PostForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
-            return redirect('/imageboard_home/')
+            return redirect('/')
 
     context = {'form': form}
     return render(request, 'imageboard_app/new_thread.html', context)
@@ -42,7 +38,7 @@ def reply(request, *args, **kwargs):
             new_reply = reply_form.save(commit=False)
             new_reply.post = post
             reply_form.save()
-            return redirect('/imageboard_home/')
+            return redirect('/')
 
     return render(request, 'imageboard_app/reply.html', {'post': post,
                                                      'new_reply': new_reply,
