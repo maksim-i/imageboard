@@ -3,6 +3,7 @@ settings_local.py
 media/imageboard/*
 !media/imageboard/icon.png
 !media/imageboard/locked.png
+!media/imageboard/screenshots
 imageboard_env
 migrate.lnk
 runserver.lnk
