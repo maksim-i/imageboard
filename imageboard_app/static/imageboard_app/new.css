@@ -1,0 +1,51 @@
+html, body
+{
+    margin: 0;
+    padding: 0;
+    background-color: gainsboro;
+}
+.contentTop
+{
+    background-color: rgba(0, 0 ,0 ,0);
+    width: 984px;
+    height: 20px;
+    margin: auto;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.contentTopLeft
+{
+    background-color: rgba(0, 0 ,0 ,0);
+    float: left;
+}
+.contentMain
+{
+    background-color: rgba(0, 0 ,0 ,0.1);
+    border-radius: 12px;
+    width: 1056px;
+    margin: auto;
+    padding: 6px 0px 6px 0px;
+    overflow: hidden;
+}
+.contentLeft
+{
+    background-color: rgba(0, 0 ,0 ,0);
+    width: 60px;
+    float: left;
+    padding: 0px 36px 0px 24px;
+}
+.contentRight
+{
+    background-color: rgba(0, 0 ,0 ,0);
+    width: 334px;
+    float: left;
+    padding: 0px 0px 0px 0px;
+}
+.contentFoot
+{
+    background-color: rgba(0, 0 ,0 ,0);
+    width: 1008px;
+    text-align: center;
+    padding-top: 14px;
+    margin: auto;
+}

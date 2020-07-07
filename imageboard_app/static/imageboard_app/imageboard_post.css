@@ -1,0 +1,48 @@
+html, body
+{
+    margin: 0;
+    padding: 0;
+    background-color: gainsboro;
+}
+.contentTop
+{
+    background-color: rgba(0, 0 ,0 ,0);
+    width: 984px;
+    height: 20px;
+    margin: auto;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.contentTopLeft
+{
+    background-color: rgba(0, 0 ,0 ,0);
+    float: left;
+}
+.contentMain
+{
+    background-color: rgba(0, 0 ,0 ,0.1);
+    border-radius: 12px;
+    width: 1056px;
+    margin: auto;
+    overflow: hidden;
+}
+.contentPost
+{
+    background-color: rgba(0, 0 ,0 ,0);
+    padding: 8px 24px 24px 24px;
+    display: inline-block;
+}
+.contentFoot
+{
+    background-color: rgba(0, 0 ,0 ,0);
+    width: 1008px;
+    text-align: center;
+    padding-top: 14px;
+    margin: auto;
+}
+.replyContent
+{
+    background-color: rgba(0, 0 ,0 ,0);
+    padding-left: 24px;
+    padding-bottom: 5px;
+}

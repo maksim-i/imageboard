@@ -1,0 +1,78 @@
+html, body
+{
+    margin: 0;
+    padding: 0;
+    background-color: gainsboro;
+}
+.contentTop
+{
+    background-color: rgba(0, 0 ,0 ,0);
+    width: 984px;
+    height: 20px;
+    margin: auto;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.contentTopLeft
+{
+    background-color: rgba(0, 0 ,0 ,0);
+    float: left;
+}
+.contentTopRight
+{
+    background-color: rgba(0, 0 ,0 ,0);
+    float: right;
+}
+.contentMain
+{
+    background-color: rgba(0, 0 ,0 ,0.1);
+    border-radius: 12px;
+    width: 1056px;
+    margin: auto;
+}
+.contentLeft
+{
+    background-color: rgba(0, 0 ,0 ,0);
+    text-align: center;
+    width: 480px;
+    float: left;
+    padding: 24px 24px 0px 24px;
+}
+.contentRight
+{
+    background-color: rgba(0, 0 ,0 ,0);
+    text-align: center;
+    width: 480px;
+    float: right;
+    padding: 24px 24px 0px 24px;
+}
+.contentCenter
+{
+    background-color: rgba(0, 0 ,0 ,0);
+    text-align: center;
+    width: 480px;
+    margin: auto;
+    padding: 0px 24px 0px 24px;
+}
+.contentPost
+{
+    background-color: rgba(0, 0 ,0 ,0);
+    width: 480px;
+    height: 480px;
+    padding-bottom: 18px;
+}
+.contentCenterPost
+{
+    background-color: rgba(0, 0 ,0 ,0);
+    width: 480px;
+    height: 478px;
+    padding-bottom: 18px;
+}
+.contentFoot
+{
+    background-color: rgba(0, 0 ,0 ,0);
+    width: 1008px;
+    text-align: center;
+    padding-top: 14px;
+    margin: auto;
+}

@@ -1,0 +1,32 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'imageboard_app/imageboard_post.css' %}">
+<title>{{ post.subject|truncatewords:5 }}</title>
+<link rel="icon" type="image/png" href="/media/imageboard/icon.png">
+<div class="contentTop">
+    <div class="contentTopLeft">
+        <a href="imageboard_home/" style="text-decoration: none; color: black;"><b><span style="font-family: helvetica;">Home</span></b></a>
+    </div>
+</div>
+<div class="contentMain">
+    <div class="contentPost">
+        <p><img src="/media/{{ post.image }}" style="height: 320px; margin-right:14px; float: left;">
+        <span style="font-family: helvetica;">Post ID: {{ post.id }} (Created {{ post.date_added }})</span>
+        <br><br>
+        <b><span style="font-family: helvetica;">{{ post.subject }}</b>: </span>
+        <span style="font-family: helvetica;">{{ post.description }}</span></p>
+    </div>
+    <div class="replyContent">
+        <span style="font-family: helvetica;">
+            Replies: {{ post.replies.count }}
+        </span>
+        <br><br>
+        {% for reply in post.replies.all %}
+            <span style="font-family: helvetica;">Reply ID: {{ reply.id }} >> {{ reply.text }}<br><br></span>
+        {% endfor %}
+    </div>
+</div>
+<hr style="clear: both; visibility: hidden; margin: 0;">
+<div class="contentFoot">
+    <span style="font-family: helvetica; font-size: 12px;">2020 Imageboard. All content uploaded is the responsibility of the Poster.<br>About • Rules • Feedback • Contact</span>
+    <br><br>
+</div>

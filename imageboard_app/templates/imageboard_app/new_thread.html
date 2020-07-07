@@ -1,0 +1,29 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'imageboard_app/new.css' %}">
+<title>Start a New Thread</title>
+<link rel="icon" type="image/png" href="/media/imageboard/icon.png">
+<div class="contentTop">
+    <div class="contentTopLeft">
+        <span style="font-family: helvetica;"><b>Start a New Thread</b></span>
+    </div>
+</div>
+<div class="contentMain">
+    <div class="contentLeft">
+        <br><br><br>
+        <span style="font-family: helvetica;">Subject:</span><br>
+        <br><br><br><br><br><br><br><br><br><br style="font-size: 5px;">
+        <span style="font-family: helvetica;">Description:</span><br>
+    </div>
+    <div class="contentRight">
+        <form action="{% url 'new_thread' %}" method='post' enctype="multipart/form-data" style="font-family: helvetica;">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button name="submit" style="font-family: helvetica;">Start</button>
+        </form>
+    </div>
+</div>
+<hr style="clear: both; visibility: hidden; margin: 0;">
+<div class="contentFoot">
+    <span style="font-family: helvetica; font-size: 12px;">2020 Imageboard. All content uploaded is the responsibility of the Poster.<br>About • Rules • Feedback • Contact</span>
+    <br><br>
+</div>

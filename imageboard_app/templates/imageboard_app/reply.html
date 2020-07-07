@@ -1,0 +1,27 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'imageboard_app/new.css' %}">
+<title>Reply to thread</title>
+<link rel="icon" type="image/png" href="/media/imageboard/icon.png">
+<div class="contentTop">
+    <div class="contentTopLeft">
+        <span style="font-family: helvetica;"><b>Reply to thread</b></span>
+    </div>
+</div>
+<div class="contentMain">
+    <div class="contentLeft">
+        <br>
+        <span style="font-family: helvetica;">Reply:</span>
+    </div>
+    <div class="contentRight">
+        <form action="{% url 'reply' %}" method='post' style="font-family: helvetica;">
+            {{ reply_form.as_p }}
+            {% csrf_token %}
+            <button name="submit" style="font-family: helvetica;">Reply</button>
+        </form>
+    </div>
+</div>
+<hr style="clear: both; visibility: hidden; margin: 0;">
+<div class="contentFoot">
+    <span style="font-family: helvetica; font-size: 12px;">2020 Imageboard. All content uploaded is the responsibility of the Poster.<br>About • Rules • Feedback • Contact</span>
+    <br><br>
+</div>
