@@ -1,5 +1,8 @@
 __pycache__/
 settings_local.py
+media/imageboard/*
+!media/imageboard/icon.png
+!media/imageboard/locked.png
 imageboard_env
 migrate.lnk
 runserver.lnk
