@@ -5,7 +5,7 @@ from django.template.defaultfilters import slugify
 
 
 class Post(models.Model):
-    image = models.FileField(upload_to='imageboard/posts/')
+    image = models.FileField(upload_to='imageboard/post_images/')
     subject = models.TextField(max_length=40)
     description = models.TextField(max_length=600)
     date_added = models.DateField(default=timezone.now)
