@@ -1,0 +1,5 @@
+__pycache__/
+settings_local.py
+imageboard_env
+migrate.lnk
+runserver.lnk
